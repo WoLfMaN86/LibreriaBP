@@ -86,6 +86,9 @@ public void setCodPostal(int[] codPostal) {
 }
 
 
+public ComercioImpl() {}
+
+
 @Override
 public String toString() {
 	return "ComercioImpl [getCodTienda()=" + getCodTienda() + ", getVendidos()=" + getVendidos() + ", getNombre()="
