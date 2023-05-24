@@ -13,7 +13,7 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 	private List<Producto> similares;
 	private List<Comercio> comercios;
 	
-	
+	public ProductoImpl() {}
 	
 	@Override
 	public Marca getMarca() {
