@@ -1,0 +1,28 @@
+plugins {
+	id 'application'
+	
+}
+
+
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Use JUnit Jupiter for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:30.1.1-jre'
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'besprice.libreria.App'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
