@@ -133,21 +133,7 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 		return nombre;
 	}
 
-
-
-
-	public ProductoImpl(String nombre, Marca marca, int peso, int barras, String categoria, String descripcion,
-			List<Producto> similares, List<Comercio> comercios) {
-		super();
-		this.nombre = nombre;
-		this.marca = marca;
-		this.peso = peso;
-		this.barras = barras;
-		this.categoria = categoria;
-		this.descripcion = descripcion;
-		this.similares = similares;
-		this.comercios = comercios;
-	}
+	
 
 
 
