@@ -13,7 +13,8 @@ public abstract class MarcaImpl implements Nombrable, Marca{
 		this.nombre = nombre;
 	}
 
-
+	public MarcaImpl() {
+	}
 	@Override
 	public String toString() {
 		return "MarcaImpl [getNombre()=" + getNombre() + "]";
