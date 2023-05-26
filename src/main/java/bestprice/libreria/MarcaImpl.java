@@ -20,6 +20,6 @@ public abstract class MarcaImpl implements Nombrable, Marca{
 		return "MarcaImpl [getNombre()=" + getNombre() + "]";
 	}
 
-
 //Test
+
 }
