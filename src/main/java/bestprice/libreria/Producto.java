@@ -9,7 +9,7 @@ public interface Producto {
 	public String getCategoria();
 	public String getDescripcion() ;
 	public List<Producto> getSimilares();
-	public List<Comercio> getComercios();
+
 	public String getNombre();
 	
 }

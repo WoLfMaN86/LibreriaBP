@@ -11,7 +11,7 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 	private String categoria;
 	private String descripcion;
 	private List<Producto> similares;
-	private List<Comercio> comercios;
+//	private List<Comercio> comercios;
 
 	public ProductoImpl() {
 
@@ -71,14 +71,7 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 		this.similares = similares;
 	}
 
-	@Override
-	public List<Comercio> getComercios() {
-		return comercios;
-	}
-
-	public void setComercios(List<Comercio> comercios) {
-		this.comercios = comercios;
-	}
+	
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -93,7 +86,7 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 	public String toString() {
 		return "ProductoImpl [getMarca()=" + getMarca() + ", getPeso()=" + getPeso() + ", getBarras()=" + getBarras()
 				+ ", getCategoria()=" + getCategoria() + ", getDescripcion()=" + getDescripcion() + ", getSimilares()="
-				+ getSimilares() + ", getComercios()=" + getComercios() + ", getNombre()=" + getNombre() + "]";
+				+ getSimilares() + ", getNombre()=" + getNombre() + "]";
 	}
 
 }
