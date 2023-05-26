@@ -8,7 +8,7 @@ public interface Producto {
 	public int getBarras();
 	public String getCategoria();
 	public String getDescripcion() ;
-	public List<Producto> getSimilares();
+	public List<ProductoComercio> getSimilares();
 
 	public String getNombre();
 	

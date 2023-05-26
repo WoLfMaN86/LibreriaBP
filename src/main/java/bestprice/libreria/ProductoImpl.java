@@ -2,7 +2,7 @@ package bestprice.libreria;
 
 import java.util.List;
 
-public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
+public class ProductoImpl implements Nombrable, Producto {
 
 	private String nombre;
 	private Marca marca;
@@ -10,12 +10,7 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 	private int barras;
 	private String categoria;
 	private String descripcion;
-	private List<Producto> similares;
-//	private List<Comercio> comercios;
-
-	public ProductoImpl() {
-
-	}
+	private List<ProductoComercio> similares;
 
 	@Override
 	public Marca getMarca() {
@@ -63,15 +58,13 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 	}
 
 	@Override
-	public List<Producto> getSimilares() {
+	public List<ProductoComercio> getSimilares() {
 		return similares;
 	}
 
-	public void setSimilares(List<Producto> similares) {
+	public void setSimilares(List<ProductoComercio> similares) {
 		this.similares = similares;
 	}
-
-	
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -82,11 +75,11 @@ public class ProductoImpl extends ComercioImpl implements Nombrable, Producto {
 		return nombre;
 	}
 
-	@Override
-	public String toString() {
+	@Override	public String toString() {
 		return "ProductoImpl [getMarca()=" + getMarca() + ", getPeso()=" + getPeso() + ", getBarras()=" + getBarras()
 				+ ", getCategoria()=" + getCategoria() + ", getDescripcion()=" + getDescripcion() + ", getSimilares()="
 				+ getSimilares() + ", getNombre()=" + getNombre() + "]";
 	}
 
 }
+

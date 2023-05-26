@@ -19,7 +19,18 @@ public abstract class ComercioImpl implements Nombrable, Comercio {
 
 	private int[] codPostal;
 
-	private List<Producto> vendidos;
+	public List<ProductoComercio> vendidos;
+	
+
+	
+	
+	public List<ProductoComercio> getVendidos() {
+		return vendidos;
+	}
+
+	public void setVendidos(List<ProductoComercio> vendidos) {
+		this.vendidos = vendidos;
+	}
 
 	@Override
 	public int getCodTienda() {
@@ -30,14 +41,7 @@ public abstract class ComercioImpl implements Nombrable, Comercio {
 		this.codTienda = codTienda;
 	}
 
-	@Override
-	public List<Producto> getVendidos() {
-		return vendidos;
-	}
 
-	public void setVendidos(List<Producto> vendidos) {
-		this.vendidos = vendidos;
-	}
 
 	@Override
 	public String getNombre() {

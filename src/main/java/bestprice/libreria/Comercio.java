@@ -10,7 +10,7 @@ public interface Comercio {
 	public int getTelefono();
 	public int[] getCodPostal();
 	public TipoComercio getTipo();
-	public List<Producto> getVendidos();
+	public List<ProductoComercio> getVendidos();
 	
 
 }
