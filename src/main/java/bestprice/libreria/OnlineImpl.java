@@ -6,8 +6,8 @@ public class OnlineImpl extends ComercioImpl implements Online {
 		return TipoComercio.Online;
 	}
 	
-	public float envio;
-	public float minimo;
+	private float envio;
+	private float minimo;
 	
 	@Override
 	public float getEnvio() {

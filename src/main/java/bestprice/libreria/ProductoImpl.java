@@ -10,8 +10,8 @@ public class ProductoImpl implements Nombrable, Producto {
 	private int barras;
 	private String categoria;
 	private String descripcion;
-	private List<Producto> similares;
-	private List<ProductoComercio> comercios;
+	public List<Producto> similares;
+	public List<ProductoComercio> comercios;
 
 	
 	
