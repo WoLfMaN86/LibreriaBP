@@ -3,7 +3,7 @@ package bestprice.libreria;
 import java.util.List;
 
 public interface Marca {
-	public String getNombre();
+	String getNombre();
 	List<Producto> getProductos();
 
 }

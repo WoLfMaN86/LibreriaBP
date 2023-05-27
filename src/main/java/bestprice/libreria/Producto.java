@@ -3,13 +3,13 @@ package bestprice.libreria;
 import java.util.List;
 
 public interface Producto {
-	public Marca getMarca();
-	public int getPeso();
-	public int getBarras();
-	public String getCategoria();
-	public String getDescripcion() ;
-	public List<Producto> getSimilares();
-	public List<ProductoComercio> getComercios();
-	public String getNombre();
+	Marca getMarca();
+	int getPeso();
+	int getBarras();
+	String getCategoria();
+	String getDescripcion() ;
+	List<Producto> getSimilares();
+	List<ProductoComercio> getComercios();
+	String getNombre();
 	
 }

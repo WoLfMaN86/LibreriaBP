@@ -1,7 +1,7 @@
 package bestprice.libreria;
 
 public interface Online {
-	public float getEnvio();
-	public float getMinimo();
+	float getEnvio();
+	float getMinimo();
 
 }

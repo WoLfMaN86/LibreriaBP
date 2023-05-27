@@ -5,12 +5,12 @@ import java.util.List;
 import bestprice.libreria.ComercioImpl.TipoComercio;
 
 public interface Comercio {
-	public int getCodTienda();
-	public String getNombre();
-	public int getTelefono();
-	public int[] getCodPostal();
-	public TipoComercio getTipo();
-	public List<ProductoComercio> getVendidos();
+	int getCodTienda();
+	String getNombre();
+	int getTelefono();
+	int[] getCodPostal();
+	TipoComercio getTipo();
+	List<ProductoComercio> getVendidos();
 	
 
 }
