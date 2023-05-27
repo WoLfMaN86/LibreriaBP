@@ -10,7 +10,26 @@ public class ProductoImpl implements Nombrable, Producto {
 	private int barras;
 	private String categoria;
 	private String descripcion;
-	private List<ProductoComercio> similares;
+	private List<Producto> similares;
+	private List<ProductoComercio> comercios;
+
+	
+	
+	public List<Producto> getSimilares() {
+		return similares;
+	}
+
+	public void setSimilares(List<Producto> similares) {
+		this.similares = similares;
+	}
+
+	public List<ProductoComercio> getComercios() {
+		return comercios;
+	}
+
+	public void setComercios(List<ProductoComercio> comercios) {
+		this.comercios = comercios;
+	}
 
 	@Override
 	public Marca getMarca() {
@@ -57,14 +76,7 @@ public class ProductoImpl implements Nombrable, Producto {
 		this.descripcion = descripcion;
 	}
 
-	@Override
-	public List<ProductoComercio> getSimilares() {
-		return similares;
-	}
 
-	public void setSimilares(List<ProductoComercio> similares) {
-		this.similares = similares;
-	}
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
