@@ -1,8 +1,8 @@
 package bestprice.libreria;
 
 public class OnlineImpl extends ComercioImpl implements Online {
-	
-	public TipoComercio getTipoComercio() {
+	@Override
+	public TipoComercio getTipo() {
 		return TipoComercio.Online;
 	}
 	
@@ -25,7 +25,7 @@ public class OnlineImpl extends ComercioImpl implements Online {
 	}
 	@Override
 	public String toString() {
-		return super.toString()+"OnlineImpl [getTipoComercio()=" + getTipoComercio() + ", getEnvio()=" + getEnvio() + ", getMinimo()="
+		return super.toString()+"OnlineImpl [getTipoComercio()=" + getTipo() + ", getEnvio()=" + getEnvio() + ", getMinimo()="
 				+ getMinimo() + "]";
 	}
 	

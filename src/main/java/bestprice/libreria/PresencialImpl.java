@@ -3,8 +3,8 @@ package bestprice.libreria;
 public class PresencialImpl extends ComercioImpl implements Presencial {
 	
 	private String direccion;
-
-	public TipoComercio getTipoComercio() {
+	@Override
+	public TipoComercio getTipo() {
 		return TipoComercio.Presencial;
 	}
 	@Override
@@ -18,7 +18,7 @@ public class PresencialImpl extends ComercioImpl implements Presencial {
 
 	@Override
 	public String toString() {
-		return super.toString()+"PresencialImpl [getTipoComercio()=" + getTipoComercio() + ", getDireccion()=" + getDireccion() + "]";
+		return super.toString()+"PresencialImpl [getTipoComercio()=" + getTipo() + ", getDireccion()=" + getDireccion() + "]";
 	}
 	
 	
