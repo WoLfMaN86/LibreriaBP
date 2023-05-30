@@ -5,7 +5,7 @@ import java.util.List;
 public interface Producto {
 	Marca getMarca();
 	int getPeso();
-	int getBarras();
+	Long getBarras();
 	String getCategoria();
 	String getDescripcion() ;
 	List<Producto> getSimilares();

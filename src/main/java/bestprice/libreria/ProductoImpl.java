@@ -7,7 +7,7 @@ public class ProductoImpl implements Nombrable, Producto {
 	private String nombre;
 	private Marca marca;
 	private int peso;
-	private int barras;
+	private Long barras;
 	private String categoria;
 	private String descripcion;
 	public List<Producto> similares;
@@ -49,12 +49,13 @@ public class ProductoImpl implements Nombrable, Producto {
 		this.peso = peso;
 	}
 
+
 	@Override
-	public int getBarras() {
+	public Long getBarras() {
 		return barras;
 	}
 
-	public void setBarras(int barras) {
+	public void setBarras(Long barras) {
 		this.barras = barras;
 	}
 
