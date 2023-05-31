@@ -2,7 +2,7 @@ package bestprice.libreria;
 
 import java.util.List;
 
-public abstract class MarcaImpl implements Nombrable, Marca{
+public class MarcaImpl implements Nombrable, Marca{
 	
 	private String nombre;
 	public List<Producto> productos;	
