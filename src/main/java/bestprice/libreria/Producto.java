@@ -7,7 +7,8 @@ public interface Producto {
 	int getPeso();
 	Long getBarras();
 	String getCategoria();
-	String getDescripcion() ;
+	String getDescripcion();
+	String getImagen();
 	List<Producto> getSimilares();
 	List<ProductoComercio> getComercios();
 	String getNombre();

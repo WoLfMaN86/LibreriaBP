@@ -10,6 +10,7 @@ public class ProductoImpl implements Nombrable, Producto {
 	private Long barras;
 	private String categoria;
 	private String descripcion;
+	private String imagen;
 	public List<Producto> similares;
 	public List<ProductoComercio> comercios;
 
@@ -87,12 +88,26 @@ public class ProductoImpl implements Nombrable, Producto {
 	public String getNombre() {
 		return nombre;
 	}
-
-	@Override	public String toString() {
-		return "ProductoImpl [getMarca()=" + getMarca() + ", getPeso()=" + getPeso() + ", getBarras()=" + getBarras()
-				+ ", getCategoria()=" + getCategoria() + ", getDescripcion()=" + getDescripcion() + ", getSimilares()="
-				+ getSimilares() + ", getNombre()=" + getNombre() + "]";
+	
+	
+	@Override
+	public String getImagen() {
+		return imagen;
 	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
+	@Override
+	public String toString() {
+		return "ProductoImpl [getSimilares()=" + getSimilares() + ", getComercios()=" + getComercios() + ", getMarca()="
+				+ getMarca() + ", getPeso()=" + getPeso() + ", getBarras()=" + getBarras() + ", getCategoria()="
+				+ getCategoria() + ", getDescripcion()=" + getDescripcion() + ", getNombre()=" + getNombre()
+				+ ", getImagen()=" + getImagen() + "]";
+	}
+
+
 
 }
 
